@@ -10,6 +10,9 @@ include "includes/header.php"
     </div>
     <!-- Page Header End -->
 
+<!--Include 404 error -->
+<?php include "includes/404.php" ?>
+
 <!--Include Footer Section -->
 <?php 
 include "includes/footer.php"
