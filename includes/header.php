@@ -105,7 +105,7 @@
                 <a href="about.php" class="nav-item nav-link">About</a>
                 
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Outreach</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">FLY-M Arms</a>
                     <div class="dropdown-menu m-0">
                         <a href="#" class="dropdown-item">FLY-M Alumni</a>
                         <a href="#" class="dropdown-item">FLY-M Breach Repairers</a>
@@ -114,7 +114,8 @@
                         <a href="#" class="dropdown-item">MTC & Tvets</a>
                     </div>
                 </div>
-                
+                <a href="news.php" class="nav-item nav-link">News</a>
+                <a href="gallery.php" class="nav-item nav-link">Gallery</a>
                 <a href="contact.php" class="nav-item nav-link">Contact</a>
             </div>
             <div class="d-none d-lg-flex ms-2">
