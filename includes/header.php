@@ -63,19 +63,19 @@
       <div
         class="top-bar text-white-50 row gx-0 align-items-center d-none d-lg-flex"
       >
-      <div class="col-lg-6 px-5 text-start">
+      <div class="col-lg-8 px-5 text-start">
         <small
           ><i class="fa fa-map-marker-alt me-2"></i>61908, Nairobi,
           KENYA</small
         >
-        <small class="ms-4"
+        <small class="ms-4 fs-6"
           ><i class="fa fa-envelope me-2"></i>ministryflym@gmail.com</small
         >
-        <small class="ms-4"
+        <small class="ms-4 fs-6"
           ><i class="fa fa-envelope me-2"></i>+254704900700</small
         >
       </div>
-        <div class="col-lg-6 px-5 text-end">
+        <div class="col-lg-4 px-5 text-end">
           <small>Follow us:</small>
           <a class="text-white-50 ms-3" href=""
             ><i class="fab fa-facebook-f"></i
@@ -118,7 +118,7 @@
                 <a href="contact.php" class="nav-item nav-link">Contact</a>
             </div>
             <div class="d-none d-lg-flex ms-2">
-                <a class="btn btn-outline-primary py-2 px-3" href="">
+                <a class="btn btn-outline-primary py-2 px-3" href="donate.php">
                     Donate Now
                     <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
                         <i class="fa fa-arrow-right"></i>

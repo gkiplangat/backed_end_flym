@@ -188,86 +188,6 @@ include "includes/header.php"
     </div>
     <!-- Service End -->
 
-    <!-- Donate Start -->
-    <div
-      class="container-fluid donate my-5 py-5"
-      data-parallax="scroll"
-      data-image-src="img/home-bg.gif"
-    >
-      <div class="container py-5">
-        <div class="row g-5 align-items-center">
-          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-            <div
-              class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3"
-            >
-              Donate Now
-            </div>
-            <h1 class="display-6 text-white mb-5">
-              Thanks For Your Continued Support
-            </h1>
-            <p class="text-white-50 mb-0">
-              Dear Revivalist, Your Support Makes Much Difference in reaching
-              out to a Soul, Your Support is highly welcomed.
-            </p>
-          </div>
-          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-            <div class="h-100 bg-white p-5">
-              <form>
-                <div class="row g-3">
-                  <h3>Partner With Us</h3>
-                  <div class="col-12">
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control bg-light border-0"
-                        id="name"
-                        placeholder="Your Name"
-                      />
-                      <label for="name">Your Name</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-floating">
-                      <input
-                        type="email"
-                        class="form-control bg-light border-0"
-                        id="email"
-                        placeholder="Your Email"
-                      />
-                      <label for="email">Your Email</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-floating">
-                      <input
-                        type="custom-amount"
-                        class="form-control bg-light border-0"
-                        id="custom-amount"
-                        placeholder="Your Email"
-                      />
-                      <label for="custom-amount">Your Custom Amount</label>
-                    </div>
-                  </div>
-                  
-                  <div class="col-12">
-                    <button class="btn btn-primary px-5" style="height: 60px">
-                      Partner Now
-                      <div
-                        class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2"
-                      >
-                        <i class="fa fa-arrow-right"></i>
-                      </div>
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Donate End -->
-
     <!-- Team Start -->
     <div class="container-xxl py-5">
       <div class="container">
@@ -367,6 +287,11 @@ include "includes/header.php"
     </div>
     <!-- Team End -->
 
+
+    <!--Include Donate Section-->
+<?php 
+include "includes/donate.php"
+?>
     <!-- Testimonial Start -->
     <div class="container-xxl py-5">
       <div class="container">
