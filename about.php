@@ -25,7 +25,7 @@ include "includes/header.php"
             >
               <img
                 class="position-absolute w-100 h-100 pt-5 pe-5"
-                src="img/about_us_1.jpeg"
+                src="img/about-3.jpg"
                 alt=""
                 style="object-fit: cover"
               />
