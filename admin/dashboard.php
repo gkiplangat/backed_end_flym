@@ -198,7 +198,7 @@ if(!isset($_SESSION['username'])){
         <div class="row mb-2 section-title">
           <div class="col-md-12 fw-bold fs-3">Departmental Leadership</div>
         </div>
-<div class="row">
+<div class="row mb-3">
   <div class="col-md-12">
     <div class="card">
       <!-- Check for success or error flags -->
@@ -342,6 +342,7 @@ if(!isset($_SESSION['username'])){
 </div>
 
 
+
 <!--Departments and Subdeparments-->
 <div class="row">
   <div class="col-md-12">
@@ -390,11 +391,10 @@ if(!isset($_SESSION['username'])){
       </tr>
     </thead>
     <tbody>
-      <?php include 'get_leaders.php'; ?>
+      <?php include 'get_departments.php'; ?>
     </tbody>
   </table>
 </div>
-
       </div>
     </div>
   </div>
