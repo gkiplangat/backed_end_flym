@@ -1,12 +1,6 @@
-<?php
-session_start();
-if(!isset($_SESSION['username'])){
-    header("Location:index.php");
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,9 +12,9 @@ if(!isset($_SESSION['username'])){
     <link rel="stylesheet" href="css/style.css" />
 
   </head>
-<body>
- <!--navbar-->
- <nav class="navbar navbar-expand-lg fixed-top">
+  <body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
         <!-- Offcanvas trigger -->
         <button
@@ -104,40 +98,14 @@ if(!isset($_SESSION['username'])){
               </a>
             </li>
 
-            <li class="nav-item dropdown">
-  <a 
-    href="#" 
-    class="nav-link px-3 active dropdown-toggle" 
-    id="accountDropdown" 
-    role="button" 
-    data-bs-toggle="dropdown" 
-    aria-expanded="false"
-  >
-    <span class="me-2">
-      <i class="bi bi-person-fill"></i>
-    </span>
-    <span>Account</span>
-  </a>
-  <ul class="dropdown-menu" aria-labelledby="accountDropdown">
-    <!-- Display logged-in username -->
-    <li>
-      <a href="#" class="dropdown-item">
-        <i class="bi bi-person"></i> <?php echo " <p>". $_SESSION['username']."</p>";?>
-      </a>
-    </li>
-    <!-- Divider -->
-    <li><hr class="dropdown-divider"></li>
-    <!-- Update Account -->
-    <li>
-      <a href="#" class="dropdown-item">
-        <i class="bi bi-gear"></i> Update Account
-      </a>
-    </li>
-  </ul>
-</li>
-
-
-            
+            <li>
+              <a href="#" class="nav-link px-3 active">
+                <span class="me-2">
+                  <i class="bi bi-person-fill"></i>
+                </span>
+                <span>Account</span>
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -234,18 +202,12 @@ if(!isset($_SESSION['username'])){
         </div>
       </div>
     </main>
-
-
-    <h1>Admin Page</h1> </br>
-    <?php echo " <h1>Welcome ". $_SESSION['username']."</h1>";?>
-    <a href="logout.php">Logout</a>
-
-<!--adding js ...................................files-->
-<script src="./js/bootstrap.bundle.min.js"></script>
+    <!--adding js ...................................files-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/jquery-3.5.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
     <script src="./js/jquery.dataTables.min.js"></script>
     <script src="./js/dataTables.bootstrap5.min.js"></script>
     <script src="./js/script.js"></script>
-</body>
+  </body>
 </html>
