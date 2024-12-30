@@ -32,6 +32,20 @@ button {
   .nav-link i {
     font-size: 1.5rem; /* Adjust the icon size */
   }
+  .navbar-brand {
+    color: #efbf04;
+  }
+  .navbar-brand:hover {
+    color: #fff;
+  }
+  #button-addon2 {
+    color: #fff;
+    background-color: #efbf04;
+    border: none;
+  }
+  .section-title,.table-title, thead {
+    color: #000435;
+  }
 
 @media (min-width:992px) {
     body{
