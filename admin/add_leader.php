@@ -13,11 +13,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO leaders (department, fullname, position, phone_number) 
             VALUES ('$department', '$name', '$position', '$phone')";
 
-    if ($conn->query($sql) === TRUE) {
-        echo "New leader added successfully.";
-    } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
-    }
+if ($conn->query($sql) === TRUE) {
+    // Redirect with success flag
+    header("Location: dashboard.php?success=1");
+    exit();
+} else {
+    // Redirect with error flag
+    header("Location: dashboard.php?error=1");
+    exit();
+}
 
     // Close the connection
     $conn->close();

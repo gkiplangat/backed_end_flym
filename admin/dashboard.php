@@ -201,6 +201,24 @@ if(!isset($_SESSION['username'])){
 <div class="row">
   <div class="col-md-12">
     <div class="card">
+      <!-- Check for success or error flags -->
+<!-- Check for success or error flags -->
+<?php if (isset($_GET['success'])): ?>
+      <div id="success-alert" class="alert alert-success alert-dismissible fade show" role="alert">
+        New leader added successfully!
+        <!--
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+-->
+      </div>
+    <?php elseif (isset($_GET['error'])): ?>
+      <div id="error-alert" class="alert alert-danger alert-dismissible fade show" role="alert">
+        Failed to add the leader. Please try again.
+    <!--
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        -->
+      </div>
+    <?php endif; ?>
+
       <div class="card-header d-flex justify-content-between align-items-center">
         <span class="table-title"><strong>Leaders Tables</strong></span>
         <!-- Add Button to trigger the modal -->
@@ -314,7 +332,7 @@ if(!isset($_SESSION['username'])){
             </button>
             <!-- Move this button inside the form and set its type to "submit" -->
             <button type="submit" class="btn btn-primary" id="saveItemButton">
-              Save Item
+              Save
             </button>
           </div>
         </form>
@@ -322,6 +340,150 @@ if(!isset($_SESSION['username'])){
     </div>
   </div>
 </div>
+
+
+<!--Departments and Subdeparments-->
+<div class="row">
+  <div class="col-md-12">
+    <div class="card">
+      <!-- Check for success or error flags -->
+<!-- Check for success or error flags -->
+<?php if (isset($_GET['success'])): ?>
+      <div id="success-alert" class="alert alert-success alert-dismissible fade show" role="alert">
+        New leader added successfully!
+        <!--
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+-->
+      </div>
+    <?php elseif (isset($_GET['error'])): ?>
+      <div id="error-alert" class="alert alert-danger alert-dismissible fade show" role="alert">
+        Failed to add the leader. Please try again.
+    <!--
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        -->
+      </div>
+    <?php endif; ?>
+
+      <div class="card-header d-flex justify-content-between align-items-center">
+        <span class="table-title"><strong>Departments and Sub-departments</strong></span>
+        <!-- Add Button to trigger the modal -->
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#addItemModal"
+        >
+          Add New
+        </button>
+      </div>
+      <div class="card-body">
+      <div class="table-responsive">
+  <table
+    id="example"
+    class="table table-striped data-table"
+    style="width: 100%"
+  >
+    <thead>
+      <tr>
+      <th>Department/Category ID</th>  
+      <th>Department/Category Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <?php include 'get_leaders.php'; ?>
+    </tbody>
+  </table>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Adding New Item -->
+<div
+  class="modal fade"
+  id="addItemModal"
+  tabindex="-1"
+  aria-labelledby="addItemModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="addItemModalLabel">Add New Leader</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form id="addItemForm" action="add_leader.php" method="POST">
+          <div class="mb-3">
+            <label for="department" class="form-label">Department</label>
+            <input
+              type="text"
+              class="form-control"
+              id="department"
+              name="department"
+              placeholder="Enter Department"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="fullname"
+              placeholder="Enter Name"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="position" class="form-label">Position</label>
+            <input
+              type="text"
+              class="form-control"
+              id="position"
+              name="position"
+              placeholder="Enter Position"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input
+              type="number"
+              class="form-control"
+              id="phone"
+              name="phone_number"
+              placeholder="Enter Phone Number"
+              required
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <!-- Move this button inside the form and set its type to "submit" -->
+            <button type="submit" class="btn btn-primary" id="saveItemButton">
+              Save
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
 </div>
     </main>
 
