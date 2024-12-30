@@ -15,11 +15,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 if ($conn->query($sql) === TRUE) {
     // Redirect with success flag
-    header("Location: dashboard.php?success=1");
+   header("Location: dashboard.php?success&type=leader");
     exit();
 } else {
     // Redirect with error flag
-    header("Location: dashboard.php?error=1");
+    header("Location: dashboard.php?error&type=leader");
     exit();
 }
 

@@ -2,8 +2,8 @@
 // Include the database configuration file
 include 'config.php';
 
-// SQL query to fetch data from the 'department' table
-$sql = "SELECT department_id, department_name, year FROM departments ORDER BY department_id ASC";
+// SQL query to fetch data from the 'categories' table
+$sql = "SELECT category_id, category_name FROM categories ORDER BY category_id ASC";
 
 // Execute the query
 $result = $conn->query($sql);
@@ -13,13 +13,12 @@ if ($result->num_rows > 0) {
     // Output data for each row
     while ($row = $result->fetch_assoc()) {
         echo "<tr>";
-        echo "<td>" . htmlspecialchars($row['department_name']) . "</td>";
-        echo "<td>" . htmlspecialchars($row['year']) . "</td>";
+        echo "<td>" . htmlspecialchars($row['category_name']) . "</td>";
         echo "</tr>";
     }
 } else {
     // If no data is found
-    echo "<tr><td colspan='4' class='text-center'>No Departments Found</td></tr>";
+    echo "<tr><td colspan='4' class='text-center'>No Categories Found</td></tr>";
 }
 
 // Close the database connection
