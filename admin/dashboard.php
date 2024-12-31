@@ -66,27 +66,27 @@
         </div>
 
         <div class="row mb-3">
-  <div class="col-md-12">
-    <div class="card">
-
-      <!-- Check for success or error flags -->
-      <?php if (isset($_GET['success']) && isset($_GET['type']) && $_GET['type'] === 'leader'): ?>
-      <div
-        id="success-alert"
-        class="alert alert-success alert-dismissible fade show"
-        role="alert"
-      >
-        New leader added successfully!
-      </div>
-      <?php elseif (isset($_GET['error']) && isset($_GET['type']) && $_GET['type'] === 'leader'): ?>
-      <div
-        id="error-alert"
-        class="alert alert-danger alert-dismissible fade show"
-        role="alert"
-      >
-        Failed to add the leader. Please try again.
-      </div>
-      <?php endif; ?>
+          <div class="col-md-12">
+            <div class="card">
+              <!-- Check for success or error flags -->
+              <?php if (isset($_GET['success']) && isset($_GET['type']) && $_GET['type'] === 'leader'): ?>
+              <div
+              id="success-alert"
+              class="alert alert-success alert-dismissible fade show"
+              role="alert"
+              >
+              New leader added successfully!
+            </div>
+            <?php elseif (isset($_GET['error']) && isset($_GET['type']) && $_GET['type'] === 'leader'): ?>
+            <div
+            id="error-alert"
+            class="alert alert-danger alert-dismissible fade show"
+            role="alert"
+            >
+            Failed to add the leader. Please try again.
+          </div>
+          
+          <?php endif; ?>
 
       <div class="card-header d-flex justify-content-between align-items-center">
         <span class="table-title"><strong>Leaders Tables</strong></span>
