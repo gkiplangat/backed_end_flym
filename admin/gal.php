@@ -58,6 +58,10 @@
             <thead>
               <tr>
                 <th>Department</th>
+                <th>Event Title</th>
+                <th>Event Description</th>
+                <th>Venue</th>
+                <th>Date</th>
                 <th>Photo 1</th>
                 <th>Photo 2</th>
                 <th>Photo 3</th>
@@ -128,6 +132,52 @@
                      ?>
                   </select>
               </div>
+
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Event Title</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="event_title"
+                      placeholder="Enter Event Title"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="position" class="form-label">Event Description</label>
+                    <textarea
+                      class="form-control"
+                      id="position"
+                      name="event_description"
+                      placeholder="Enter Event Description"
+                      rows="4"
+                      required>
+                    </textarea>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="phone" class="form-label">Venue</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="phone"
+                      name="venue"
+                      placeholder="Where did the event Happen? "
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="phone" class="form-label">Date</label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="phone"
+                      name="date"
+                      required
+                    />
+                  </div>
 
                   <div class="mb-3">
                     <div class="row" >

@@ -11,7 +11,7 @@ include "includes/header.php"
     <!-- Page Header End -->
 
 <!--Include 404 error -->
-<?php include "includes/404.php" ?>
+<?php include "includes/get_gallery.php" ?>
 
 <!--Include Footer Section -->
 <?php 

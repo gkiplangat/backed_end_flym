@@ -137,7 +137,7 @@
         >
           <div class="modal-dialog">
             <div class="modal-content">
-              <div class="modal-header">
+              <div class="modal-header text-white">
                 <h5 class="modal-title" id="addItemModalLabel">
                   Add New Leader
                 </h5>
@@ -346,7 +346,7 @@
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="addItemModalLabel">
+                <h5 class="modal-title text-light" id="addItemModalLabel">
                   Add New Category
                 </h5>
                 <button
@@ -416,7 +416,7 @@
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="addItemModalLabel">
+                <h5 class="modal-title text-light" id="addItemModalLabel">
                   Add New Department
                 </h5>
                 <button
