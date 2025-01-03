@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Ensure the .php files are rewritten without the extension
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)/?$ $1.php [L]
+
+# Optionally redirect from the root URL to index.php, so it doesn't show index.php in the URL
+RewriteRule ^$ index.php [L]

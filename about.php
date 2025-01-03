@@ -231,6 +231,7 @@ include "includes/header.php"
         </div>
       </div>
     </div>
+    
     <!-- Our History-->
     <div class="main" id="our_history">
       <div
@@ -243,37 +244,33 @@ include "includes/header.php"
           <ul>
               <li>
                   <h3 class="heading">FLY-M Founded</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit excepturi accusamus minus
-                  totam </p>
-                  <a href="#">Read More ></a>
+                  <p>FLY-M was founded in 1987 by Presbyter Kato, who initially received invitations to conduct pastoral programs in primary schools, starting with Moi Avenue Primary School in Nairobi.</p>
                   <span class="date">January 1987</span>
                   <span class="circle"></span>
               </li>
               <li>
-                  <h3 class="heading">Breach Raparers Arm Birth</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit excepturi accusamus minus
-                  totam </p>
-                  <a href="#">Read More ></a>
+                  <h3 class="heading">FLY-M Breach Raparers</h3>
+                  <p>Breach Repairers (BR) was founded in 2005 with the vision of promoting balanced living and addressing the challenges faced by students transitioning from high school to higher institutions of learning, such as newfound freedom and academic pressure. The club focuses on love, worship, intercession, and outreach, offering workshops, mentorship programs, and counseling to add value and foster excellence in students' lives. </p>
                   <span class="date">February 2005</span>
                   <span class="circle"></span>
               </li>
               <li>
-                  <h3 class="heading">Junior Radicals Birth</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit excepturi accusamus minus
-                  totam </p>
-                  <a href="#">Read More ></a>
-                  <span class="date">March 2014</span>
+                  <h3 class="heading">FLY-M Junior Radicals</h3>
+                  <p>FLY-M Junior Radicals (JR) was created in June 2017 as a WhatsApp group aimed at keeping students engaged during school holidays and after the KCSE exams. This initiative became especially important during the Covid-19 lockdown when schools across Kenya closed indefinitely. The prolonged closure posed unique challenges: parents weren’t accustomed to having students home for extended periods, and many students struggled with isolation, boredom, and negative influences such as crime, immorality, and addictions.
+ </p>
+                  
+                  <span class="date">March 2017</span>
                   <span class="circle"></span>
               </li>
               <li>
-                  <h3 class="heading">Alumni Association</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit excepturi accusamus minus
-                  totam </p>
-                  <a href="#">Read More ></a>
-                  <span class="date">April 2021</span>
+                  <h3 class="heading">Fly-M Alumni</h3>
+                  <p>Alumni was founded as a way to provides essential support after campus by fostering networking opportunities, career guidance, and mentorship for graduates. It promotes professional development through workshops and seminars while enabling members to give back through outreach to campus students.  </p>
+                  
+                  <span class="date">April 2018</span>
                   <span class="circle"></span>
               </li>
               
+              <!--
               <li>
                 <h3 class="heading">Partnership with KSCF</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit excepturi accusamus minus
@@ -282,6 +279,7 @@ include "includes/header.php"
                 <span class="date">March 2022</span>
                 <span class="circle"></span>
             </li>
+              -->
           </ul>
       </div>
   </div>

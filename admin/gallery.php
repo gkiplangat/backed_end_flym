@@ -7,7 +7,7 @@
 		<!--Title-->
         <div class="row mb-2">
           <div class="col-md-12 fw-bold fs-3 section-title">
-            What's New
+            Our Gallery
           </div>  
         </div>
 
@@ -131,7 +131,7 @@
 
                   <div class="mb-3">
                     <div class="row" >
-                    	<div class="col-md-3">
+                    	
                     		<label for="phone" class="form-label">Photo_One</label>
                     		<input type="file" accept="image/*" 
                     		class="form-control" 
@@ -140,7 +140,7 @@
                     		required/>
                     	</div>
 
-                    	<div class="col-md-3">
+                    	<div class="row">
                     		<label for="phone" class="form-label">Photo_Two</label>
                     		<input type="file" accept="image/*"
                     		class="form-control" 
@@ -149,7 +149,7 @@
                     		required/>
                     	</div>
 
-                    	<div class="col-md-3">
+                    	<div class="row">
                     		<label for="phone" class="form-label">Photo_Three</label>
                     		<input type="file" accept="image/*" 
                     		class="form-control" 
@@ -158,7 +158,7 @@
                     		required/>
                     	</div>
 
-                    	<div class="col-md-3">
+                    	<div class="row">
                     		<label for="phone" class="form-label">Photo_Four</label>
                     		<input type="file" accept="image/*"
                     		class="form-control" 

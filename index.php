@@ -2,6 +2,8 @@
 <?php 
 include "includes/header.php"
 ?>
+
+
     <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5">
       <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -187,7 +189,7 @@ include "includes/header.php"
     </div>
     <!-- Service End -->
 
-    <!-- Team Start -->
+    <!-- Team Start 
     <div class="container-xxl py-5">
       <div class="container">
         <div
@@ -218,7 +220,7 @@ include "includes/header.php"
                                 <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
                             </div>
                             -->
-              </div>
+              <!--</div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -236,7 +238,7 @@ include "includes/header.php"
                                 <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
                             </div>
                             -->
-              </div>
+              <!--</div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -278,12 +280,13 @@ include "includes/header.php"
                                 <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
                             </div>
                             -->
-              </div>
+              <!--</div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    -->
     <!-- Team End -->
 
 
@@ -304,7 +307,7 @@ include "includes/donate.php"
           >
             Testimonial
           </div>
-          <h1 class="display-6 mb-5">Our Impact</h1>
+          
         </div>
         <div
           class="owl-carousel testimonial-carousel wow fadeInUp"
@@ -313,52 +316,35 @@ include "includes/donate.php"
           <div class="testimonial-item text-center">
             <img
               class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-              src="img/testimonial-1.jpg"
+              src="img/calvin_br.jpg"
               style="width: 100px; height: 100px"
             />
             <div class="testimonial-text rounded text-center p-4">
               <p>
-                "As a member of Breach Repairers, I found a spiritual home that
-                empowers me to tackle both academic and life challenges with
-                faith and wisdom. The fellowship fosters a deep connection with
-                Christ while encouraging professional and personal growth.
-                Through seminars, mentorship, and outreach activities, I've
-                learned to approach life with purpose, embracing integrity and
-                responsibility. FLY-M has been instrumental in shaping my
-                character and preparing me to step confidently into the future,
-                knowing that I’m equipped with the values and tools to succeed."
+                "To the glory of God through Kabarak BR I was able to be filled with the Holy Spirit with the evidence of speaking in tongues, and connected to a family of believers, discovered my identity in Christ and knew part of my purpose.Last but not least ,I was on the verge of giving up with education but during my quiet time the Lord impressed a scripture in my heart(Phil 1:6). I thank God I finally graduated. My sincere gratitude to Fly-m leadership, BR family"
               </p>
-              <h5 class="mb-1">Grace Mutu</h5>
-              <span class="fst-italic">Breach Repairers Club Member</span>
+              <h5 class="mb-1">Calvin Odhiambo</h5>
+              <span class="fst-italic">Breach Repairers</span>
             </div>
           </div>
           <div class="testimonial-item text-center">
             <img
               class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-              src="img/testimonial-2.jpg"
+              src="img/ezina_br.jpg"
               style="width: 100px; height: 100px"
             />
             <div class="testimonial-text rounded text-center p-4">
               <p>
-                "Joining Junior Radicals has been life-changing for me. FLY-M
-                has provided a safe space where I can grow spiritually and
-                emotionally, surrounded by supportive peers and mentors. The
-                teachings and outreach activities help me understand the
-                importance of living with integrity and staying true to my faith
-                in a world filled with challenges like peer pressure and
-                substance abuse. I’ve found strength in Jesus and have gained
-                confidence in sharing my faith with others. Junior Radicals is
-                more than just a group—it's a family that has helped me build a
-                solid foundation for life."
+                "Breach Repairers was the turning point in my spiritual and personal journey, transforming me from a lost and unsure believer into a confident leader grounded in faith. It provided a family that nurtured me through mentorship, fellowship, and programs like missions, helping me overcome fears, deepen my relationship with God, and discover my purpose. As a leader, I learned to serve with love and humility, positively influencing others while gaining lifelong friendships and a commitment to impact lives for Christ."
               </p>
-              <h5 class="mb-1">Stephen Mwangi</h5>
-              <span class="fst-italic">Junior Radical Mentee</span>
+              <h5 class="mb-1">Ezinah Momanyi</h5>
+              <span class="fst-italic">Breach Repairers</span>
             </div>
           </div>
           <div class="testimonial-item text-center">
             <img
               class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-              src="img/testimonial-3.jpg"
+              src="img/gideon_alumni.jpg"
               style="width: 100px; height: 100px"
             />
             <div class="testimonial-text rounded text-center p-4">
@@ -374,7 +360,7 @@ include "includes/donate.php"
                 I belong—a place where faith and professional excellence go hand
                 in hand."
               </p>
-              <h5 class="mb-1">Kioko Michael</h5>
+              <h5 class="mb-1">Gideon Kiplangat</h5>
               <span class="fst-italic">FLY-M Alumni</span>
             </div>
           </div>

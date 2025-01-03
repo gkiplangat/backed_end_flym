@@ -6,7 +6,7 @@
             <div
               class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3"
             >
-              Donate Now
+              Support Now
             </div>
             <h1 class="display-6 mb-5">
               Thanks For Your Continued Support
