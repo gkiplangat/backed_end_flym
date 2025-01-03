@@ -81,3 +81,17 @@
     
 })(jQuery);
 
+/ // Define options for the counters
+    const options = { duration: 2 };
+
+    // Initialize counters
+    const universitiesCounter = new CountUp('universities', 25, options);
+    const highSchoolsCounter = new CountUp('high-schools', 50, options);
+    const primarySchoolsCounter = new CountUp('primary-schools', 20, options);
+    const tvetsCounter = new CountUp('tvets', 10, options);
+
+    // Start the counters
+    if (!universitiesCounter.error) universitiesCounter.start();
+    if (!highSchoolsCounter.error) highSchoolsCounter.start();
+    if (!primarySchoolsCounter.error) primarySchoolsCounter.start();
+    if (!tvetsCounter.error) tvetsCounter.start();

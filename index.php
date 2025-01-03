@@ -129,171 +129,129 @@ include "includes/header.php"
           </div>
           <h1 class="display-6 mb-5">Learn More What We Do And Get Involved</h1>
         </div>
-        <div class="row g-4 justify-content-center">
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+        <!--What We do Row 1-->
+        <div class="row g-3 justify-content-center mb-3">
+          
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
-              <img class="img-fluid mb-4" src="img/icon-1.png" alt="" />
-              <h4 class="mb-3">Street Evangelism</h4>
+              <h4 class="mb-3">Children Evangelism & Outreach</h4>
               <p class="mb-4">
-                Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum
-                diam justo sed vero dolor duo.
+                We evangelize to children in primary schools and neighborhoods and host dedicated crusades for them. Our goal is to instill moral and spiritual values from a young age.
               </p>
-              <a class="btn btn-outline-primary px-3" href="">
-                Learn More
-                <div
-                  class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2"
-                >
-                  <i class="fa fa-arrow-right"></i>
-                </div>
-              </a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
             <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
-              <img class="img-fluid mb-4" src="img/icon-2.png" alt="" />
+              <h4 class="mb-3">High School Ministry</h4>
+              <p class="mb-4">
+                We engage high school students through weekend challenges, seminars, Sunday services, discipleship, and worship experiences. These programs aim to nurture their spiritual growth and equip them with life skills for a fulfilling future.
+              </p>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
+              <h4 class="mb-3">University Outreaches</h4>
+              <p class="mb-4">
+                We disciple and train university students to become spiritually, socially, financially, and academically empowered individuals. Our focus is on developing well-rounded citizens capable of making a positive impact in their communities.
+              </p>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
+                <h4 class="mb-3">Street Evangelism</h4>
+                <p class="mb-4">
+                  We conduct weekly street evangelism in Nairobi, boldly proclaiming the gospel to diverse audiences. This outreach focuses on connecting with individuals who may not attend formal church settings.
+                </p>
+              </div>
+            </div>
+        </div>
+
+        <!--What We do Row 2-->
+        <div class="row g-3 justify-content-center mb-3">
+          
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
+              <h4 class="mb-3">Prison Ministry</h4>
+              <p class="mb-4">
+                Through prison visits, we share messages of hope, salvation, and redemption with those incarcerated. These engagements aim to inspire transformation and reintegration into society.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
               <h4 class="mb-3">Hospital Visits</h4>
               <p class="mb-4">
-                Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum
-                diam justo sed vero dolor duo.
-              </p>
-              <a class="btn btn-outline-primary px-3" href="">
-                Learn More
-                <div
-                  class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2"
-                >
-                  <i class="fa fa-arrow-right"></i>
-                </div>
-              </a>
+                We visit hospitals to pray for the sick and preach messages of hope and encouragement. Our mission is to bring spiritual healing and comfort to patients and their families.
+              </p> 
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
-              <img class="img-fluid mb-4" src="img/icon-3.png" alt="" />
-              <h4 class="mb-3">School Ministry</h4>
-              <p class="mb-4">
-                Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum
-                diam justo sed vero dolor duo.
-              </p>
-              <a class="btn btn-outline-primary px-3" href="">
-                Learn More
-                <div
-                  class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2"
-                >
-                  <i class="fa fa-arrow-right"></i>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Service End -->
 
-    <!-- Team Start 
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div
-          class="text-center mx-auto mb-5 wow fadeInUp"
-          data-wow-delay="0.1s"
-          style="max-width: 500px"
-        >
-          <div
-            class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3"
-          >
-            Team Members
-          </div>
-          <h1 class="display-6 mb-5">Let's Meet With Our Ministry Team</h1>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="team-item position-relative rounded overflow-hidden">
-              <div class="overflow-hidden">
-                <img class="img-fluid" src="img/kato.jpeg" alt="" />
-              </div>
-              <div class="team-text bg-light text-center p-4">
-                <h5>Presbyter Kato C. Lafont & Pastor Joan I. Lafont</h5>
-                <p class="text-primary">FLY-M Founders</p>
-                <!--
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                            -->
-              <!--</div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="team-item position-relative rounded overflow-hidden">
-              <div class="overflow-hidden">
-                <img class="img-fluid" src="img/kosgei.jpg" alt="" />
-              </div>
-              <div class="team-text bg-light text-center p-4">
-                <h5>Cleophas Kosgei</h5>
-                <p class="text-primary">FLY-M Chairperson</p>
-                <!--
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                            -->
-              <!--</div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
+              <h4 class="mb-3">Crusade & Conferences</h4>
+                <p class="mb-4">
+                  We collaborate with churches and ministries to organize impactful crusades and conferences. These events serve as platforms for widespread evangelism and spiritual revival.
+                </p>             
             </div>
           </div>
           <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="team-item position-relative rounded overflow-hidden">
-              <div class="overflow-hidden">
-                <img class="img-fluid" src="img/charei.jpeg" alt="" />
-              </div>
-              <div class="team-text bg-light text-center p-4">
-                <h5>David Charei</h5>
-                <p class="text-primary">
-                  Asst. Chairperson & Head of Street Evangelism
+              <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
+               
+                <h4 class="mb-3">Professional Mentorship & Training</h4>
+                <p class="mb-4">
+                  We provide training on professional conduct and navigating the corporate world effectively. These sessions empower participants to excel and lead in their respective fields.
                 </p>
-                <div class="team-social text-center">
-                  <a class="btn btn-square" href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a class="btn btn-square" href=""
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a class="btn btn-square" href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
+
               </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-            <div class="team-item position-relative rounded overflow-hidden">
-              <div class="overflow-hidden">
-                <img class="img-fluid" src="img/kariuki.jpeg" alt="" />
-              </div>
-              <div class="team-text bg-light text-center p-4">
-                <h5>Kariuki Francis</h5>
-                <p class="text-primary">Breach Repairers Chairperson</p>
-                <!--
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                            -->
-              <!--</div>
-            </div>
-          </div>
         </div>
+        </div>
+        
       </div>
     </div>
-    -->
-    <!-- Team End -->
+
+<!--Our Reach-->
+<div class="container my-5">
+  <div class="row text-center">
+    <div class="col-md-3 col-6 mb-4">
+      <div class="countdown-item">
+        <h2 class="display-4 fw-bold">25+</h2>
+        <p class="text-muted">Universities</p>
+      </div>
+    </div>
+    <div class="col-md-3 col-6 mb-4">
+      <div class="countdown-item">
+        <h2 class="display-4 fw-bold">50+</h2>
+        <p class="text-muted">High Schools</p>
+      </div>
+    </div>
+    <div class="col-md-3 col-6 mb-4">
+      <div class="countdown-item">
+        <h2 class="display-4 fw-bold">20+</h2>
+        <p class="text-muted">Primary Schools</p>
+      </div>
+    </div>
+    <div class="col-md-3 col-6 mb-4">
+      <div class="countdown-item">
+        <h2 class="display-4 fw-bold">10+</h2>
+        <p class="text-muted">TVETs & MTCs</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
     <!--Include Donate Section-->
 <?php 
 include "includes/donate.php"
 ?>
+
+
     <!-- Testimonial Start -->
     <div class="container-xxl py-5">
       <div class="container">
