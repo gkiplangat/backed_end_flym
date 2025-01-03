@@ -1,4 +1,4 @@
-<?php
+<?php 
 // Include the database configuration file
 include 'config.php';
 
@@ -10,25 +10,96 @@ $result = $conn->query($sql);
 
 // Check if there are results
 if ($result->num_rows > 0) {
-    // Output data for each row
     while ($row = $result->fetch_assoc()) {
+        $id = $row['id'];
+        $department = htmlspecialchars($row['department_assoc']);
+        $photo_one = $row['photo_one'];
+        $photo_two = $row['photo_two'];
+        $photo_three = $row['photo_three'];
+        $photo_four = $row['photo_four'];
+
         echo "<tr>";
-        echo "<td>" . htmlspecialchars($row['department_assoc']) . "</td>";
-        echo "<td><img src='../uploads/" . htmlspecialchars($row['photo_one']) . "' alt='Photo 1' width='100' height='100'></td>";
-        echo "<td><img src='../uploads/" . htmlspecialchars($row['photo_two']) . "' alt='Photo 2' width='100' height='100'></td>";
-        echo "<td><img src='../uploads/" . htmlspecialchars($row['photo_three']) . "' alt='Photo 3' width='100' height='100'></td>";
-        echo "<td><img src='../uploads/" . htmlspecialchars($row['photo_four']) . "' alt='Photo 4' width='100' height='100'></td>";
+        echo "<td>" . $department . "</td>";
+        echo "<td><img src='../uploads/" . htmlspecialchars($photo_one) . "' alt='Photo 1' width='100' height='100'></td>";
+        echo "<td><img src='../uploads/" . htmlspecialchars($photo_two) . "' alt='Photo 2' width='100' height='100'></td>";
+        echo "<td><img src='../uploads/" . htmlspecialchars($photo_three) . "' alt='Photo 3' width='100' height='100'></td>";
+        echo "<td><img src='../uploads/" . htmlspecialchars($photo_four) . "' alt='Photo 4' width='100' height='100'></td>";
         echo "<td>
-                <a href='actions/edit_gallery.php?id=" . $row['id'] . "' class='btn btn-warning'>Edit</a>
-                <a href='actions/delete_gallery.php?id=" . $row['id'] . "' class='btn btn-danger' onclick='return confirm(\"Are you sure you want to delete this record?\");'>Delete</a>
+                <button class='btn btn-warning' data-bs-toggle='modal' data-bs-target='#editModal$id'>Edit</button>
+                <button class='btn btn-danger' data-bs-toggle='modal' data-bs-target='#deleteModal$id'>Delete</button>
               </td>";
         echo "</tr>";
+
+        // Edit Modal
+        echo "
+        <div class='modal fade' id='editModal$id' tabindex='-1' aria-labelledby='editModalLabel$id' aria-hidden='true'>
+                <div class='modal-dialog'>
+                    <div class='modal-content'>
+                        <div class='modal-header'>
+                            <h5 class='modal-title' id='editModalLabel$id'>Edit Gallery - $department</h5>
+                            <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                        </div>
+                        <div class='modal-body'>
+                            <form action='actions/edit_gallery.php' method='POST' enctype='multipart/form-data'>
+                                <input type='hidden' name='id' value='$id'>
+
+                                <div class='mb-3'>
+                                    <label for='department$id' class='form-label'>Department</label>
+                                    <input type='text' class='form-control' id='department$id' name='department_assoc' value='$department' required>
+                                </div>
+
+                                <div class='mb-3'>
+                                    <label for='photoOne$id' class='form-label'>Photo 1</label>
+                                    <input type='file' class='form-control' id='photoOne$id' name='photo_one'>
+                                    <img src='../uploads/$photo_one' alt='Current Photo 1' width='100' height='100' class='mt-2'>
+                                </div>
+
+                                <div class='mb-3'>
+                                    <label for='photoTwo$id' class='form-label'>Photo 2</label>
+                                    <input type='file' class='form-control' id='photoTwo$id' name='photo_two'>
+                                    <img src='../uploads/$photo_two' alt='Current Photo 2' width='100' height='100' class='mt-2'>
+                                </div>
+
+                                <div class='mb-3'>
+                                    <label for='photoThree$id' class='form-label'>Photo 3</label>
+                                    <input type='file' class='form-control' id='photoThree$id' name='photo_three'>
+                                    <img src='../uploads/$photo_three' alt='Current Photo 3' width='100' height='100' class='mt-2'>
+                                </div>
+
+                                <div class='mb-3'>
+                                    <label for='photoFour$id' class='form-label'>Photo 4</label>
+                                    <input type='file' class='form-control' id='photoFour$id' name='photo_four'>
+                                    <img src='../uploads/$photo_four' alt='Current Photo 4' width='100' height='100' class='mt-2'>
+                                </div>
+
+                                <button type='submit' class='btn btn-primary'>Save Changes</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>";
+
+        // Delete Modal
+        echo "
+        <div class='modal fade' id='deleteModal$id' tabindex='-1' aria-labelledby='deleteModalLabel$id' aria-hidden='true'>
+            <div class='modal-dialog'>
+                <div class='modal-content'>
+                    <div class='modal-header'>
+                        <h5 class='modal-title' id='deleteModalLabel$id'>Confirm Delete</h5>
+                        <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                    </div>
+                    <div class='modal-body'>
+                        Are you sure you want to delete the record for <strong>$department</strong>?
+                    </div>
+                    <div class='modal-footer'>
+                        <button type='button' class='btn btn-secondary' data-bs-dismiss='modal'>Cancel</button>
+                        <a href='actions/delete_gallery.php?id=$id' class='btn btn-danger'>Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>";
     }
 } else {
-    // If no data is found
     echo "<tr><td colspan='10' class='text-center'>No gallery data found</td></tr>";
 }
-
-// Close the database connection
 $conn->close();
-?>
