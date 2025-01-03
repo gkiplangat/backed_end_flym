@@ -1,4 +1,11 @@
-/********** Template CSS **********/
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
 :root {
     --primary: #EFBF04;
     --secondary: #FFF0E6;

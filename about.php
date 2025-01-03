@@ -25,15 +25,9 @@ include "includes/header.php"
             >
               <img
                 class="position-absolute w-100 h-100 pt-5 pe-5"
-                src="img/about-3.jpg"
+                src="img/about.jpg"
                 alt=""
                 style="object-fit: cover"
-              />
-              <img
-                class="position-absolute top-0 end-0 bg-white ps-2 pb-2"
-                src="img/about2.jpeg"
-                alt=""
-                style="width: 200px; height: 200px"
               />
             </div>
           </div>
@@ -47,8 +41,7 @@ include "includes/header.php"
               <h1 class="display-6 mb-5">
                 We are Christ-centered, interdenominational fellowship that
                 empowers young people to navigate spiritual,professional, and
-                social challenges through Biblical principles and the
-                transformative power of faith.
+                social challenges through Biblical principles
               </h1>
               <div
                 class="bg-light border-bottom border-5 border-primary rounded p-4 mb-4"
@@ -73,22 +66,6 @@ include "includes/header.php"
                 Bible, salvation through Jesus, and the transformative power of
                 the Holy Spirit in believers' lives.
               </p>
-              <a class="btn btn-primary py-2 px-2 me-3" href="about.html">
-                Learn More
-                <div
-                  class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2"
-                >
-                  <i class="fa fa-arrow-right"></i>
-                </div>
-              </a>
-              <a class="btn btn-outline-primary py-2 px-3" href="contact.html">
-                Contact Us
-                <div
-                  class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2"
-                >
-                  <i class="fa fa-arrow-right"></i>
-                </div>
-              </a>
             </div>
           </div>
         </div>
@@ -97,7 +74,7 @@ include "includes/header.php"
     <!-- About End -->
 
     <!-- Service Start -->
-    <div class="container-xxl py-5" id="what_we_do">
+    <div class="container-xxl py-5">
       <div class="container">
         <div
           class="text-center mx-auto mb-5 wow fadeInUp"
@@ -111,62 +88,88 @@ include "includes/header.php"
           </div>
           <h1 class="display-6 mb-5">Learn More What We Do And Get Involved</h1>
         </div>
-        <div class="row g-4 justify-content-center">
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+        <!--What We do Row 1-->
+        <div class="row g-3 justify-content-center mb-3">
+          
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
-              <img class="img-fluid mb-4" src="img/icon-1.png" alt="" />
-              <h4 class="mb-3">Child Education</h4>
+              <h4 class="mb-3">Children Evangelism & Outreach</h4>
               <p class="mb-4">
-                Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum
-                diam justo sed vero dolor duo.
+                We evangelize to children in primary schools and neighborhoods and host dedicated crusades for them. Our goal is to instill moral and spiritual values from a young age.
               </p>
-              <a class="btn btn-outline-primary px-3" href="">
-                Learn More
-                <div
-                  class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2"
-                >
-                  <i class="fa fa-arrow-right"></i>
-                </div>
-              </a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
             <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
-              <img class="img-fluid mb-4" src="img/icon-2.png" alt="" />
-              <h4 class="mb-3">Medical Treatment</h4>
+              <h4 class="mb-3">High School Ministry</h4>
               <p class="mb-4">
-                Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum
-                diam justo sed vero dolor duo.
+                We engage high school students through weekend challenges, seminars, Sunday services, discipleship, and worship experiences. These programs aim to nurture their spiritual growth and equip them with life skills for a fulfilling future.
               </p>
-              <a class="btn btn-outline-primary px-3" href="">
-                Learn More
-                <div
-                  class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2"
-                >
-                  <i class="fa fa-arrow-right"></i>
-                </div>
-              </a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+          
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
             <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
-              <img class="img-fluid mb-4" src="img/icon-3.png" alt="" />
-              <h4 class="mb-3">Pure Drinking Water</h4>
+              <h4 class="mb-3">University Outreaches</h4>
               <p class="mb-4">
-                Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum
-                diam justo sed vero dolor duo.
+                We disciple and train university students to become spiritually, socially, financially, and academically empowered individuals. Our focus is on developing well-rounded citizens capable of making a positive impact in their communities.
               </p>
-              <a class="btn btn-outline-primary px-3" href="">
-                Learn More
-                <div
-                  class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2"
-                >
-                  <i class="fa fa-arrow-right"></i>
-                </div>
-              </a>
             </div>
           </div>
+          
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
+                <h4 class="mb-3">Street Evangelism</h4>
+                <p class="mb-4">
+                  We conduct weekly street evangelism in Nairobi, boldly proclaiming the gospel to diverse audiences. This outreach focuses on connecting with individuals who may not attend formal church settings.
+                </p>
+              </div>
+            </div>
         </div>
+
+        <!--What We do Row 2-->
+        <div class="row g-3 justify-content-center mb-3">
+          
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
+              <h4 class="mb-3">Prison Ministry</h4>
+              <p class="mb-4">
+                Through prison visits, we share messages of hope, salvation, and redemption with those incarcerated. These engagements aim to inspire transformation and reintegration into society.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
+              <h4 class="mb-3">Hospital Visits</h4>
+              <p class="mb-4">
+                We visit hospitals to pray for the sick and preach messages of hope and encouragement. Our mission is to bring spiritual healing and comfort to patients and their families.
+              </p> 
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
+              <h4 class="mb-3">Crusade & Conferences</h4>
+                <p class="mb-4">
+                  We collaborate with churches and ministries to organize impactful crusades and conferences. These events serve as platforms for widespread evangelism and spiritual revival.
+                </p>             
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
+               
+                <h4 class="mb-3">Professional Mentorship & Training</h4>
+                <p class="mb-4">
+                  We provide training on professional conduct and navigating the corporate world effectively. These sessions empower participants to excel and lead in their respective fields.
+                </p>
+
+              </div>
+            </div>
+        </div>
+        </div>
+        
       </div>
     </div>
     <!-- Service End -->
@@ -231,7 +234,7 @@ include "includes/header.php"
         </div>
       </div>
     </div>
-    
+
     <!-- Our History-->
     <div class="main" id="our_history">
       <div

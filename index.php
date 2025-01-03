@@ -77,15 +77,9 @@ include "includes/header.php"
             >
               <img
                 class="position-absolute w-100 h-100 pt-5 pe-5"
-                src="img/about_us_1.jpeg"
+                src="img/about.jpg"
                 alt=""
                 style="object-fit: cover"
-              />
-              <img
-                class="position-absolute top-0 end-0 bg-white ps-2 pb-2"
-                src="img/about2.jpeg"
-                alt=""
-                style="width: 200px; height: 200px"
               />
             </div>
           </div>
@@ -100,7 +94,7 @@ include "includes/header.php"
               <p class="mb-5">
                 Feed My Lambs Youth Ministry (FLY-M) is an interdenominational fellowship dedicated to guiding young people in their spiritual, professional, and social journeys. Rooted in Biblical principles, FLY-M aims to help youth build a personal relationship with Jesus while empowering them to navigate life’s challenges in faith, integrity, and responsibility.
               </p>
-              <a class="btn btn-primary py-2 px-3 me-3" href="about.html">
+              <a class="btn btn-primary py-2 px-3 me-3" href="about">
                 Learn More
                 <div
                   class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2"
