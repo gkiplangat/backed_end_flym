@@ -14,22 +14,62 @@
         <div class="row mb-3">
           <div class="col-md-12">
             <div class="card">
-              <!-- Check for success or error flags -->
-              <?php if (isset($_GET['success']) && isset($_GET['type']) && $_GET['type'] === 'gallery'): ?>
+              <!-- Check for success or error flags for Add -->
+              <?php if (isset($_GET['success']) && isset($_GET['type']) && $_GET['type'] === 'galleryAdd'): ?>
               <div
               id="success-alert"
               class="alert alert-success alert-dismissible fade show"
               role="alert"
               >
-              New Gallery added successfully!
+              Record Added successfully!
             </div>
-            <?php elseif (isset($_GET['error']) && isset($_GET['type']) && $_GET['type'] === 'gallery'): ?>
+            <?php elseif (isset($_GET['error']) && isset($_GET['type']) && $_GET['type'] === 'galleryAdd'): ?>
             <div
             id="error-alert"
             class="alert alert-danger alert-dismissible fade show"
             role="alert"
             >
-            Failed to add the Gallery. Please try again.
+            Failed to Add Record. Please try again.
+          </div>
+          
+          <?php endif; ?>
+
+          <!-- Check for success or error flags for Edit -->
+              <?php if (isset($_GET['success']) && isset($_GET['type']) && $_GET['type'] === 'galleryUpdate'): ?>
+              <div
+              id="success-alert"
+              class="alert alert-success alert-dismissible fade show"
+              role="alert"
+              >
+              Record Updated successfully!
+            </div>
+            <?php elseif (isset($_GET['error']) && isset($_GET['type']) && $_GET['type'] === 'galleryUpdate'): ?>
+            <div
+            id="error-alert"
+            class="alert alert-danger alert-dismissible fade show"
+            role="alert"
+            >
+            Failed to Update Record. Please try again.
+          </div>
+          
+          <?php endif; ?>
+
+          <!-- Check for success or error flags for Delete -->
+              <?php if (isset($_GET['success']) && isset($_GET['type']) && $_GET['type'] === 'galleryDelete'): ?>
+              <div
+              id="success-alert"
+              class="alert alert-success alert-dismissible fade show"
+              role="alert"
+              >
+              Record Deleted successfully!
+            </div>
+            <?php elseif (isset($_GET['error']) && isset($_GET['type']) && $_GET['type'] === 'galleryDelete'): ?>
+            <div
+            id="error-alert"
+            class="alert alert-danger alert-dismissible fade show"
+            role="alert"
+            >
+            Failed to Update Delete. Please try again.
           </div>
           
           <?php endif; ?>

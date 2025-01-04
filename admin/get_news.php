@@ -39,11 +39,11 @@ if ($result->num_rows > 0) {
             <div class='modal-dialog'>
                 <div class='modal-content'>
                     <div class='modal-header'>
-                        <h5 class='modal-title' id='editModalLabel$id'>Edit Event</h5>
+                        <h5 class='modal-title text-light' id='editModalLabel$id'>Edit News</h5>
                         <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
                     </div>
                     <div class='modal-body'>
-                        <form action='actions/edit_event.php' method='POST' enctype='multipart/form-data'>
+                        <form action='actions/edit_news.php' method='POST' enctype='multipart/form-data'>
                             <!-- Hidden input for ID -->
                             <input type='hidden' name='id' value='$id'>
                             
@@ -97,7 +97,7 @@ if ($result->num_rows > 0) {
             <div class='modal-dialog'>
                 <div class='modal-content'>
                     <div class='modal-header'>
-                        <h5 class='modal-title' id='deleteModalLabel$id'>Confirm Delete</h5>
+                        <h5 class='modal-title text-light' id='deleteModalLabel$id'>Confirm Delete</h5>
                         <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
                     </div>
                     <div class='modal-body'>
@@ -105,7 +105,7 @@ if ($result->num_rows > 0) {
                     </div>
                     <div class='modal-footer'>
                         <button type='button' class='btn btn-secondary' data-bs-dismiss='modal'>Cancel</button>
-                        <a href='actions/delete_event.php?id=$id' class='btn btn-danger'>Delete</a>
+                        <a href='actions/delete_news.php?id=$id' class='btn btn-danger'>Delete</a>
                     </div>
                 </div>
             </div>

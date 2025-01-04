@@ -48,11 +48,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         if ($stmt->execute()) {
             // Redirect with success flag
-            header("Location: news.php?success&type=gallery");
+            header("Location: news.php?success&type=NewsAdd");
             exit();
         } else {
             // Redirect with error flag
-            header("Location: news.php?error&type=gallery");
+            header("Location: news.php?error&type=NewsAdd");
             exit();
         }
 

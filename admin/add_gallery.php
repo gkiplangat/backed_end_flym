@@ -40,11 +40,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         if ($stmt->execute()) {
             // Redirect with Success flag
-            header("Location: gallery.php?success&type=gallery");
+            header("Location: gallery.php?success&type=galleryAdd");
             exit();
         } else {
             // Redirect with error flag
-            header("Location: gallery.php?error&type=gallery");
+            header("Location: gallery.php?error&type=galleryAdd");
             exit();
         }
         

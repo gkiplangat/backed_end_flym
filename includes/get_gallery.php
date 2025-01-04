@@ -90,7 +90,4 @@ echo '</nav>';
 $conn->close();
 ?>
 
-<!-- Include Footer Section -->
-<?php 
-include "includes/footer.php";
-?>
+
