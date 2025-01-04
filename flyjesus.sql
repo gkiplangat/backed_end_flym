@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 03, 2025 at 07:19 PM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 8.1.12
+-- Generation Time: Jan 04, 2025 at 10:23 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -96,8 +96,7 @@ CREATE TABLE `events` (
 
 INSERT INTO `events` (`id`, `department_assoc`, `event_title`, `event_description`, `venue`, `date`, `photo`) VALUES
 (4, 'LAMBS MINISRY', 'CROSSOVER RADICAL KESHA', '                    fedfdd', 'KICC Aphitheathre Hall', '2025-01-24', '6777b79e8a77f_Kesha_1.jpg'),
-(5, 'FLY-M GENERAL(ALL)', 'Youth Conference', '                    fghjkl', 'KICC Aphitheathre Hall', '2025-01-10', '6777cf5183435_Youth Conference.jpg'),
-(7, 'LAMBS MINISRY', 'Youth Conference', '                    fgjkl', 'CHRISCO CCC, Near Green Park', '2025-01-02', '6777d20804989_Kesha_3.jpg');
+(8, 'LAMBS MINISRY', 'RESTORATION RADICAL KESHA NOVEMBER EDITION', '                    hjkl', 'CHRISCO CCC, Near Green Park', '2025-01-12', '6779a262eba8d_founders_2.jpg');
 
 -- --------------------------------------------------------
 
@@ -119,11 +118,8 @@ CREATE TABLE `gallery` (
 --
 
 INSERT INTO `gallery` (`id`, `department_assoc`, `photo_one`, `photo_two`, `photo_three`, `photo_four`) VALUES
-(1, 'LAMBS MINISRY', 'Kesha_1.jpg', 'Kesha_2.jpg', 'Kesha_3.jpg', 'Youth Conference.jpg'),
 (2, 'LAMBS MINISRY', 'Kesha_4.jpg', 'Kesha_2.jpg', 'Kesha_1.jpg', 'Kesha_3.jpg'),
-(3, 'BREACH REPAIRERS', 'Kesha_3.jpg', 'Kesha_3.jpg', 'Kesha_1.jpg', 'Kesha_4.jpg'),
-(4, 'JUNIOR RADICALS', 'Kesha_2.jpg', 'Kesha_4.jpg', 'Kesha_1.jpg', 'Kesha_3.jpg'),
-(5, 'LAMBS MINISRY', 'about_us_1.jpeg', 'about_us_1.jpeg', 'about_us_1.jpeg', 'about_us_1.jpeg');
+(3, 'BREACH REPAIRERS', '1736023543_about2.jpeg', '1736023543_about2.jpeg', '1736023543_founders_2.jpg', '1736023543_founders_1.jpeg');
 
 -- --------------------------------------------------------
 
@@ -235,13 +231,13 @@ ALTER TABLE `departments`
 -- AUTO_INCREMENT for table `events`
 --
 ALTER TABLE `events`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `gallery`
 --
 ALTER TABLE `gallery`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `leaders`
