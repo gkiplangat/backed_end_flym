@@ -81,9 +81,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index" class="nav-item nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'index.php' ? 'active' : ''; ?>">Home</a>
-                <a href="about" class="nav-item nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'about.php' ? 'active' : ''; ?>">About</a>
+                <a href="index" class="nav-item nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'index' ? 'active' : ''; ?>">Home</a>
+                <a href="about" class="nav-item nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'about' ? 'active' : ''; ?>">About</a>
                 
+                <!--
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">FLY-M Arms</a>
                     <div class="dropdown-menu m-0">
@@ -93,10 +94,11 @@
                         <a href="#" class="dropdown-item">FLY-M Lambs</a>
                         <a href="#" class="dropdown-item">MTC & Tvets</a>
                     </div>
-                </div>
-                <a href="news" class="nav-item nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'news.php' ? 'active' : ''; ?>">Events</a>
+                </div>-->
+
+                <a href="news" class="nav-item nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'news' ? 'active' : ''; ?>">Events</a>
                 <a href="gallery" class="nav-item nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'gallery.php' ? 'active' : ''; ?>">Gallery</a>
-                <a href="contact.php" class="nav-item nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'contact.php' ? 'active' : ''; ?>">Contact</a>
+                <a href="contact" class="nav-item nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'contact.php' ? 'active' : ''; ?>">Contact Us</a>
             </div>
             <div class="d-none d-lg-flex ms-2">
                 <a class="btn btn-outline-primary py-2 px-3" href="donate">
