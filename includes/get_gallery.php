@@ -7,8 +7,9 @@ include 'admin/config.php';
 // Define the number of images per page
 $imagesPerPage = 12;
 
-// Fetch all images from the database
-$sql = "SELECT department_assoc, photo_one, photo_two, photo_three, photo_four FROM gallery";
+// Fetch all images from the database, ordered by the most recently added
+$sql = "SELECT department_assoc, photo_one, photo_two, photo_three, photo_four FROM gallery ORDER BY created_at DESC";
+
 $result = $conn->query($sql);
 
 $allImages = [];
@@ -49,30 +50,55 @@ $modalId = 0;
 foreach ($imagesToDisplay as $image) {
     echo '<div class="col-lg-3 col-md-4 col-sm-6">';
     echo '<div class="card">';
-    echo '<img src="uploads/' . $image['photo'] . '" class="img-fluid" alt="Photo" data-bs-toggle="modal" data-bs-target="#modal' . $modalId . '">';
+    echo '<img src="uploads/' . $image['photo'] . '" class="img-fluid" alt="Photo" data-bs-toggle="modal" data-bs-target="#carouselModal">';
     echo '</div>';
     echo '</div>';
-
-    // Modal for the image
-    echo '
-    <div class="modal fade" id="modal' . $modalId . '" tabindex="-1" aria-labelledby="modalLabel' . $modalId . '" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalLabel' . $modalId . '">' . $image['department_assoc'] . '</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <img src="uploads/' . $image['photo'] . '" class="img-fluid" alt="Photo">
-          </div>
-        </div>
-      </div>
-    </div>';
-    $modalId++;
 }
 
 echo '</div>'; // Close row
 echo '</div>'; // Close container
+
+// Modal with Bootstrap Carousel
+echo '
+<div class="modal fade" id="carouselModal" tabindex="-1" aria-labelledby="carouselModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="carouselModalLabel">Gallery</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">';
+
+          // Add carousel items dynamically
+          $isFirst = true;
+          foreach ($allImages as $image) {
+              $activeClass = $isFirst ? 'active' : '';
+              echo '
+              <div class="carousel-item ' . $activeClass . '">
+                <img src="uploads/' . $image['photo'] . '" class="d-block w-100" alt="Photo" style="object-fit: contain; max-height: 80vh;">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>' . $image['department_assoc'] . '</h5>
+                </div>
+              </div>';
+              $isFirst = false;
+          }
+
+echo '     </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>';
 
 // Pagination Controls
 echo '<nav>';
@@ -89,5 +115,3 @@ echo '</nav>';
 // Close the database connection
 $conn->close();
 ?>
-
-

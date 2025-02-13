@@ -71,6 +71,7 @@ include "includes/header.php"
                   </button>
                 </div>
               </div>
+            </form>
           </div>
           <div
             class="col-lg-6 wow fadeIn"

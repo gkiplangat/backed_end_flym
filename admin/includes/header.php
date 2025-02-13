@@ -18,6 +18,11 @@ if(!isset($_SESSION['username'])){
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/FLY-M.PNG" type="image/x-icon"/>
+    <!-- For better browser support, this line important -->
+    <link rel="shortcut icon" href="assets/images/FLY-M.PNG" type="image/x-icon"/>
   </head>
   <body>
     <!--navbar-->
