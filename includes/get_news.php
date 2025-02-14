@@ -3,13 +3,12 @@
 include 'admin/config.php';
 
 // Set the default time zone to match your server's or desired time zone
-date_default_timezone_set('Africa/Nairobi');  // Adjust to your preferred time zone
-
+date_default_timezone_set('Africa/Nairobi');  
 
 // SQL query to fetch upcoming events, ordered by the closest date first
-$sql = "SELECT id, department_assoc, event_title, event_description, venue, date, photo 
+$sql = "SELECT id, department_assoc, event_title, event_description, venue, date, event_time, photo 
         FROM events 
-        WHERE date >= NOW() 
+        WHERE date >= CURDATE() 
         ORDER BY date ASC"; 
 
 // Execute the query
@@ -26,13 +25,13 @@ $result = $conn->query($sql);
             if ($result->num_rows > 0) {
                 // Output data for each row
                 while ($row = $result->fetch_assoc()) {
-                    // Ensure the event date is in the correct format
-                    $event_date = new DateTime($row['date']);
-                    $event_date->setTimezone(new DateTimeZone('Africa/Nairobi')); // Ensure correct time zone for the event
-                    $event_timestamp = $event_date->getTimestamp(); // Get the timestamp of the event
+                    // Ensure the event date and time are in the correct format
+                    $event_datetime_str = $row['date'] . ' ' . $row['event_time']; // Combine date and time
+                    $event_datetime = new DateTime($event_datetime_str, new DateTimeZone('Africa/Nairobi'));
+                    $event_timestamp = $event_datetime->getTimestamp(); // Get the timestamp of the event
                     
-                    // Format the event date for display in PHP if necessary
-                    $formatted_event_date = $event_date->format('Y-m-d H:i:s');
+                    // Format the event date for display
+                    $formatted_event_date = $event_datetime->format('Y-m-d H:i A'); // Example: 2025-02-13 03:30 PM
                     ?>
                     <!-- Event Card -->
                     <div class="col-md-4 mb-4"> <!-- 3 columns for 4 events per row -->
@@ -52,7 +51,7 @@ $result = $conn->query($sql);
                                         <h5 class="card-title"><?php echo htmlspecialchars($row['event_title']); ?></h5>
                                         
                                         <p class="card-text"><strong>Venue:</strong> <?php echo htmlspecialchars($row['venue']); ?></p>
-                                        <p class="card-text"><strong>Date:</strong> <?php echo htmlspecialchars($formatted_event_date); ?></p>
+                                        <p class="card-text"><strong>Date & Time:</strong> <?php echo htmlspecialchars($formatted_event_date); ?></p>
                                     </div>
                                 </div>
                             </div>
@@ -62,7 +61,7 @@ $result = $conn->query($sql);
                     <script>
                         // JavaScript to update the countdown
                         (function() {
-                            var eventDate = <?php echo $event_timestamp * 1000; ?>; // Event timestamp in milliseconds
+                            var eventDate = <?php echo $event_timestamp * 1000; ?>; // Convert timestamp to milliseconds
                             var countdownElement = document.getElementById('countdown-<?php echo $row['id']; ?>');
 
                             function updateCountdown() {
@@ -91,7 +90,7 @@ $result = $conn->query($sql);
                     <?php
                 }
             } else {
-                echo '<p class="text-center">Currently We do not Have Active Meetings.</p>';
+                echo '<p class="text-center">Currently, we do not have active meetings.</p>';
             }
         } else {
             echo '<p class="text-center">Error fetching events: ' . $conn->error . '</p>';

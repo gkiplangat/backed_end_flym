@@ -10,6 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $event_description = mysqli_real_escape_string($conn, $_POST['event_description']);
     $venue = mysqli_real_escape_string($conn, $_POST['venue']);
     $date = mysqli_real_escape_string($conn, $_POST['date']);
+    $time= mysqli_real_escape_string($conn, $_POST['event_time']);
 
     // Handle file uploads
     $photo = uniqid() . '_' . $_FILES['photo']['name'];
@@ -40,11 +41,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     // Insert data into the database
-    $sql = "INSERT INTO events (department_assoc, event_title, event_description, venue, date, photo) VALUES (?, ?, ?, ?, ?, ?)";
+    $sql = "INSERT INTO events (department_assoc, event_title, event_description, venue, date, event_time, photo) VALUES (?, ?, ?, ?, ?, ?, ?)";
     $stmt = $conn->prepare($sql);
 
     if ($stmt) {
-        $stmt->bind_param('ssssss', $department, $event_title, $event_description, $venue, $date, $photo);
+        $stmt->bind_param('sssssss', $department, $event_title, $event_description, $venue, $date, $time, $photo);
 
         if ($stmt->execute()) {
             // Redirect with success flag

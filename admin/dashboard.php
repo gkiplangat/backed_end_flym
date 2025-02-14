@@ -88,6 +88,28 @@
           
           <?php endif; ?>
 
+          <!--reset-->
+
+            <!-- Check for success or error flags -->
+              <?php if (isset($_GET['success']) && isset($_GET['type']) && $_GET['type'] === 'resetPassS'): ?>
+              <div
+              id="success-alert"
+              class="alert alert-success alert-dismissible fade show"
+              role="alert"
+              >
+              Password reset successfully!
+            </div>
+            <?php elseif (isset($_GET['error']) && isset($_GET['type']) && $_GET['type'] === 'resetPassE'): ?>
+            <div
+            id="error-alert"
+            class="alert alert-danger alert-dismissible fade show"
+            role="alert"
+            >
+            Failed to reset password. Please try again.
+          </div>
+          
+          <?php endif; ?>
+
       <div class="card-header d-flex justify-content-between align-items-center">
         <span class="table-title"><strong>Leaders Tables</strong></span>
 

@@ -7,7 +7,7 @@
 		<!--Title-->
         <div class="row mb-2">
           <div class="col-md-12 fw-bold fs-3 section-title">
-            What's New
+            What's Coming Up
           </div>  
         </div>
 
@@ -200,7 +200,7 @@
                       class="form-control"
                       id="phone"
                       name="venue"
-                      placeholder="Where did the event Happen? "
+                      placeholder="Where will the event Happen? "
                       required
                     />
                   </div>
@@ -217,6 +217,18 @@
                   </div>
 
                   <div class="mb-3">
+                    <label for="time" class="form-label">Time</label>
+                    <input
+                      type="time"
+                      class="form-control"
+                      id="time"
+                      name="event_time"
+                      required
+                    />
+                  </div>
+
+
+                  <div class="mb-3">
                     <div class="row" >
                     	<div class="col-md-12">
                     		<label for="phone" class="form-label">Poster</label>
@@ -228,6 +240,8 @@
                     	</div>
                     </div>
                   </div>
+
+                   
 
                   <div class="modal-footer">
                     <button

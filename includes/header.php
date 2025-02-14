@@ -37,7 +37,7 @@
 
     <!-- Navbar Start -->
     <div
-      class="container-fluid fixed-top px-0 wow fadeIn"
+      class="container-fluid fixed-top px-0 bg-dark"
       data-wow-delay="0.1s"
     >
       <div

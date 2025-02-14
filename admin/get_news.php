@@ -3,7 +3,7 @@
 include 'config.php';
 
 // SQL query to fetch data from the 'events' table
-$sql = "SELECT id, department_assoc, event_title, event_description, venue, date, photo FROM events";
+$sql = "SELECT id, department_assoc, event_title, event_description, venue, date, event_time, photo FROM events";
 
 // Execute the query
 $result = $conn->query($sql);
@@ -18,6 +18,8 @@ if ($result->num_rows > 0) {
         $description = htmlspecialchars($row['event_description']);
         $venue = htmlspecialchars($row['venue']);
         $date = htmlspecialchars($row['date']);
+        $time = htmlspecialchars($row['event_time']);
+
         $photo = htmlspecialchars($row['photo']);
 
         echo "<tr>";
@@ -75,6 +77,12 @@ if ($result->num_rows > 0) {
                             <div class='mb-3'>
                                 <label for='date$id' class='form-label'>Date</label>
                                 <input type='date' class='form-control' id='date$id' name='date' value='$date' required>
+                            </div>
+
+                             <!-- Date -->
+                            <div class='mb-3'>
+                                <label for='event_time$id' class='form-label'>Time</label>
+                                <input type='time' class='form-control' id='date$id' name='event_time' value='$time' required>
                             </div>
                             
                             <!-- Photo -->
